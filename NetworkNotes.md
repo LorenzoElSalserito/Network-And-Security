@@ -1,5 +1,5 @@
 # Network&Security
-## Appunti & Note
+## Appunti & Note (in Italian)
 
 ## NIC: Network Computer Card
 è la scheda di rete del computer, serve per connettere qualsiasi dispositivo alla rete.
