@@ -28,40 +28,40 @@ operano su questo tipo di modello che è STANDARD.
 ## I Layer sono 7. 
 Ogni Layer è indipendente dall’altro,
  
- ## #LAYER 7: application 
+ ### LAYER 7: application 
 – Network processes to application(Si parla di protocolli, non app)
- ## #LAYER 6: presentation 
+ ### LAYER 6: presentation 
 – si assicura che i dati siano leggibili dai sistemi al ricevimento
- ## #LAYER 5: session 
+ ### LAYER 5: session 
  – InterHost Communication, stabilisce, mantiene e termina le sessioni di connessione tra le varie applicazioni che si 
  interfacciano tra di loro.
- ## #LAYER 4: transport 
+ ### LAYER 4: transport 
 – end-to-end connection, mediante segmetazione dei messaggi in pacchetti. Il PC ricevente, riassembla le informazioni che riceve, 
 ricostruendo il 
 messaggio iniziale. Usa TCP (Transmission Control Protocol) e UDP (User Data Protocol).
- ## #LAYER 3: network 
+ ### LAYER 3: network 
 – permette la consegna dei pacchetti di dati da un device ad un altro attraverso il path più efficiente per poter consegnare i 
 pacchetti. I criteri di 
 scelta del path, sono determinati dal costo, dalla lunghezza di banda, dalla hop count, o dalla longest match of network address. 
 Non cè reiability in Layer 3, esso 
 determina il path da seguire ed il Logical Addressing.
- ## #LAYER 2: data link 
+ ### LAYER 2: data link 
 – permette agli indirizzi fisici di accedere ai media. Definisce come vengono formattati dati per la trasmissione e come è 
 controllato l’accesso al  
 networking. Ci permette anche di capire se ci sono errori nel network (Provides Error Detecting).
- ## #LAYER 1: physical 
+ ### LAYER 1: physical 
 – binary transmission, definisce i segnali, fisici, elettronici, procedurali, le funzionalità specifiche, per 
 attivare/disattivare/mantenere i segnali fisici.
-## #Layer 1:
+### Layer 1:
 comprende tutte le caratteristiche fisiche e le proprietà dei cavi, degli strumenti, delle connessioni FISICHE, che avvengono tra 
 un device ed un altro.
-## #HANDSHAKE: 
+### HANDSHAKE: 
 procedura standard di stabilimento di connessione tra 2 device, è simile al processo umano, mediante la quale, quando due persone 
 si incontrano, si salutano, iniziando una conversazione.
 ## TCP-3WAY HANDSHAKE:
 permette di reinviare pacchetti che vengono persi durante la connessione di 2 dispositivi, a differenza di UDP, che quando un 
 pacchetto subisce un DROP, viene perso.
-## #SESSION MULTIPLEXING:
+### SESSION MULTIPLEXING:
 lavora su Layer 4, permette il multiplexing di molti messaggi in stream o sessioni in un unico link logico, mantenendo traccia di 
 quali messaggi appartengono a quale sessione. UDP non lo permette, esso viene usato maggiormente per VoIP o applicazioni che non 
 necessitano di ritrasmettere i pacchetti.
