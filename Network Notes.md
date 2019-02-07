@@ -3,37 +3,36 @@
 ##Network&Security
 ##Appunti & Note
 
-NIC: Network Computer Card
+#NIC: Network Computer Card
 è la scheda di rete del computer, serve per connettere qualsiasi dispositivo alla rete.
-Network Protocol:
+#Network Protocol:
 E’ un insieme di regole e di standard che permettono ai computer di poter comunicare tra loro
-Home Network:
+#Home Network:
 il router riceve i dati e li indirizza da un interfaccia ad un’altra, scegliendo il giusto percorso da eseguire. Questo permette di scegliere una strada che sia più rapida, ottimizzando i tempi di risposta.
-SOHO: Small Office & Home Office:
+#SOHO: Small Office & Home Office:
 uno switch ti permette di avere più punti di connessione per connettere più dispositivi alla rete.
-IP ADDRESS: Internet Protocol Access
+#IP ADDRESS: Internet Protocol Access
 è un indirizzo numerico assegnato ad ogni device che si interfaccia ad internet. Funziona similmente all’indirizzo di casa.
-DHCP: Dinamic Host Configuration Protocol
+#DHCP: Dinamic Host Configuration Protocol
 permette di allocare dinamicamente gli indirizzi IP dei device connessi al router.
-DNS: Domain Name System
+#DNS: Domain Name System
 converte nomi o nomi di dominio, come google.com, da HUMAN READABLE in indirizzi IP, in questo modo i computer riescono ad identificare un nome scritto nella URL e tradurlo in un indirizzo IP, in modo da permettere al device di interfacciarsi al sito.
-MAC ADDRESS: indirizzo fisico della scheda di rete, è unico per ogni scheda. E’ lungo 48bit, è una combinazione del valore della società produttrice della scheda di rete (OUI →Organization Unique Identifier) e di una porzione unica.
-OSI Model:
+#MAC ADDRESS: indirizzo fisico della scheda di rete, è unico per ogni scheda. E’ lungo 48bit, è una combinazione del valore della società produttrice della scheda di rete (OUI →Organization Unique Identifier) e di una porzione unica.
+#OSI Model:
 E’ la suddivisione in Layer, serve per comprendere meglio come funziona il networking.
 La necessità di creare un modello è nata dal crescente bisogno di interoperabilità degli
 strumenti di networking, che essendo inizialmente chiusi, e operando su sistemi proprietari, rallentavano lo sviluppo di sistemi di rete. Oggi, con l’OSI MODEL, questo non avviene, poiché tutti i sistemi operano su questo tipo di modello che è STANDARD.
 I Layer sono 7. Ogni Layer è indipendente dall’altro,
 	
-	LAYER 7: application – Network processes to application (Si parla di protocolli, non app)
-	LAYER 6: presentation – si assicura che i dati siano leggibili dai sistemi al ricevimento
-	LAYER 5: session – InterHost Communication, stabilisce, mantiene e termina le sessioni di 		     connessione tra le varie applicazioni che si interfacciano tra di loro.
-	LAYER 4: transport – end-to-end connection, mediante segmetazione dei messaggi in 			     pacchetti. Il PC ricevente, riassembla le informazioni che riceve, ricostruendo il 		     messaggio iniziale. Usa TCP (Transmission Control Protocol) e UDP (User Data 		     Protocol).
-	LAYER 3: network – permette la consegna dei pacchetti di dati da un device ad un altro 		     attraverso il path più efficiente per poter consegnare i pacchetti. I criteri di 			    scelta del path, sono determinati dal costo, dalla lunghezza di banda, dalla hop 		    count, o dalla longest match of network address. Non cè reiability in Layer 3, 		     esso determina il path da seguire ed il Logical Addressing.
-	LAYER 2: data link – permette agli indirizzi fisici di accedere ai media. Definisce come 			    vengono formattati  dati per la trasmissione e come è controllato l’accesso al 		     	    networking. Ci permette anche di capire se ci sono errori nel network (Provides 		    Error Detecting).
-	LAYER 1: physical – binary transmission, definisce i segnali, fisici, elettronici, procedurali, 		     le funzionalità specifiche, per attivare/disattivare/mantenere i segnali fisici.
-		    Layer 1 comprende tutte le caratteristiche fisiche e le proprietà dei cavi, degli 		     strumenti, delle connessioni FISICHE, che avvengono tra un device ed un altro.
+##LAYER 7: application – Network processes to application (Si parla di protocolli, non app)
+##LAYER 6: presentation – si assicura che i dati siano leggibili dai sistemi al ricevimento
+##LAYER 5: session – InterHost Communication, stabilisce, mantiene e termina le sessioni di connessione tra le varie applicazioni che si interfacciano tra di loro.
+##LAYER 4: transport – end-to-end connection, mediante segmetazione dei messaggi in pacchetti. Il PC ricevente, riassembla le informazioni che riceve, ricostruendo il messaggio iniziale. Usa TCP (Transmission Control Protocol) e UDP (User Data Protocol).
+##LAYER 3: network – permette la consegna dei pacchetti di dati da un device ad un altro attraverso il path più efficiente per poter consegnare i pacchetti. I criteri di scelta del path, sono determinati dal costo, dalla lunghezza di banda, dalla hop count, o dalla longest match of network address. Non cè reiability in Layer 3,      esso determina il path da seguire ed il Logical Addressing.
+##LAYER 2: data link – permette agli indirizzi fisici di accedere ai media. Definisce come vengono formattati  dati per la trasmissione e come è controllato l’accesso al networking. Ci permette anche di capire se ci sono errori nel network (Provides Error Detecting). 
+##LAYER 1: physical – binary transmission, definisce i segnali, fisici, elettronici, procedurali, le funzionalità specifiche, per attivare/disattivare/mantenere i segnali fisici. Layer 1 comprende tutte le caratteristiche fisiche e le proprietà dei cavi, degli strumenti, delle connessioni FISICHE, che avvengono tra un device ed un altro.
 
-HANDSHAKE: procedura standard di stabilimento di connessione tra 2 device, è simile al processo umano, mediante la quale, quando due persone si incontrano, si salutano, iniziando una conversazione.
+#HANDSHAKE: procedura standard di stabilimento di connessione tra 2 device, è simile al processo umano, mediante la quale, quando due persone si incontrano, si salutano, iniziando una conversazione.
 TCP-3WAY HANDSHAKE: permette di reinviare pacchetti che vengono persi durante la connessione di 2 dispositivi, a differenza di UDP, che quando un pacchetto subisce un DROP, viene perso.
 SESSION MULTIPLEXING: lavora su Layer 4, permette il multiplexing di molti messaggi in stream o sessioni in un unico link logico, mantenendo traccia di quali messaggi appartengono a quale sessione. UDP non lo permette, esso viene usato maggiormente per VoIP o applicazioni che non necessitano di ritrasmettere i pacchetti.
 TCP → Telephone call
