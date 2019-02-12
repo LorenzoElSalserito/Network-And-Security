@@ -3,4 +3,4 @@
 ## How to execute a bash script?
 
 Example:
-sudo sh <"File Name>
+sudo sh <"File Name">
